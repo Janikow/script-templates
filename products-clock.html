@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real-Time Clock Script Pack | Script Templates</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clock Template - Script Templates</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="clock.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="logo">&lt;<span class="tag">Script</span> <span class="attr">Templates</span>&gt;</div>
+    <div class="logo">&lt;<span class="tag">ScriptTemplates</span>&gt;</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
+      <a href="products.html" class="active">Products</a>
       <a href="about.html">About</a>
     </nav>
   </header>
 
   <main>
-    <section class="product-detail">
-      <h1><span class="tag">&lt;h1&gt;</span>Real-Time Clock Script Pack<span class="tag">&lt;/h1&gt;</span></h1>
-      <p class="product-desc">
-        Keep perfect time in any project.  
-        This <span class="keyword">multi-language pack</span> includes synchronized scripts for:
-      </p>
+    <h1>&lt;<span class="tag">Clock</span> <span class="attr">Template</span>&gt;</h1>
+    <p>
+      A minimalist real-time clock that updates every second, written in multiple
+      languages for cross-platform use. Perfect for dashboards, game UIs, or
+      coding demos.
+    </p>
 
-      <ul class="file-list">
-        <li><span class="keyword">Python</span> – Console clock using <code>datetime</code> and live updates.</li>
-        <li><span class="keyword">Roblox Lua</span> – UI label displaying system time.</li>
-        <li><span class="keyword">HTML5 + JS</span> – Browser-based digital clock.</li>
-      </ul>
+    <div class="clock-container">
+      <div id="clock">00:00:00</div>
+    </div>
 
-      <p class="details">
-        Perfect for tutorials, learning logic across languages, or dropping into any app that needs a live clock.
-      </p>
+    <h2 style="margin-top:2.5rem;">Downloads</h2>
+    <p>You can download the source code in your preferred language:</p>
 
-      <!-- Gumroad button -->
-      <a href="https://gumroad.com/l/real-time-clock" class="buy-btn">Buy Now on Gumroad</a>
+    <div class="download-links">
+      <a href="downloads/clock/clock.html" download>Download HTML Version</a><br>
+      <a href="downloads/clock/clock.py" download>Download Python Version</a><br>
+      <a href="downloads/clock/clock.lua" download>Download Roblox Lua Version</a><br>
+      <a href="downloads/clock/clock.js" download>Download JavaScript Version</a>
+    </div>
 
-      <!-- Optional AdSense slot -->
-      <!-- <div class="ad-slot">[AdSense Slot Here]</div> -->
-
-      <div class="back-link">
-        <a href="products.html">&larr; Back to Products</a>
-      </div>
-    </section>
+    <h2 style="margin-top:2.5rem;">Preview</h2>
+    <p>Watch the live clock update above in real-time.</p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Script Templates | contact@scripttemplates.dev</p>
+    &lt;!— Contact: <a href="mailto:contact@scripttemplates.dev">contact@scripttemplates.dev</a> —&gt;
   </footer>
 </body>
 </html>
