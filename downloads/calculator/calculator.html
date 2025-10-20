@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Calculator</title>
+  <style>
+    body { background:#0d1117; color:#79c0ff; font-family:'Fira Code', monospace; display:flex; justify-content:center; align-items:center; height:100vh; }
+    input, button { font-family:'Fira Code', monospace; font-size:1.2rem; margin:0.25rem; }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="text" id="display" readonly />
+    <br />
+    <button onclick="appendNum('1')">1</button>
+    <button onclick="appendNum('2')">2</button>
+    <button onclick="appendNum('3')">3</button>
+    <button onclick="appendNum('+')">+</button>
+    <br />
+    <button onclick="appendNum('4')">4</button>
+    <button onclick="appendNum('5')">5</button>
+    <button onclick="appendNum('6')">6</button>
+    <button onclick="appendNum('-')">-</button>
+    <br />
+    <button onclick="appendNum('7')">7</button>
+    <button onclick="appendNum('8')">8</button>
+    <button onclick="appendNum('9')">9</button>
+    <button onclick="appendNum('*')">*</button>
+    <br />
+    <button onclick="appendNum('0')">0</button>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="appendNum('/')">/</button>
+  </div>
+
+  <script>
+    const display = document.getElementById('display');
+    function appendNum(n){ display.value += n; }
+    function clearDisplay(){ display.value = ''; }
+    function calculate(){ display.value = eval(display.value); }
+  </script>
+</body>
+</html>
